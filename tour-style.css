@@ -1,0 +1,14 @@
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+img {
+  border-radius: 12px;
+}
+h1 {
+  padding-bottom: 30px;
+}
+.world-img {
+  width: 60%;
+  height: 70%;
+}
