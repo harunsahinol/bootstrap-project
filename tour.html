@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="tour-style.css">
+    <link rel="stylesheet" href="tour-style.css" />
 
     <title>Tours</title>
   </head>
@@ -51,8 +51,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Navbar Links Starts here -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -67,12 +68,14 @@
         </div>
       </nav>
     </header>
-
+    <!-- Introducing part -->
     <main>
-      <div class="container container-fluid ">
+      <div class="container container-fluid">
         <header class="row">
           <div class="text-start col header-text-box">
-            <h1>We design and build better chairs, for a better life</h1>
+            <h1 class="fw-bold">
+              We design and build better chairs, for a better life
+            </h1>
             <p class="header-text">
               In a small shop in the heart of Lisbon, we spend our days
               relentlessly perfecting the chair. The result is a perfect blend
@@ -81,14 +84,65 @@
             </p>
             <a class="btn btn-success btn--big" href="#">View All Tours</a>
           </div>
-          <img class="world-img col img-fluid" src="assets/world-photo.jpg" alt="" />
+          <img
+            class="world-img col img-fluid"
+            src="assets/world-photo.jpg"
+            alt=""
+          />
         </header>
       </div>
     </main>
 
-    <section>
-      
-
+    <!-- Card Section -->
+    <section class="container-fluid row">
+      <div class="card col" style="width: 18rem">
+        <img
+          class="card-img-top"
+          style="height: 350px"
+          src="assets/europe-tour.jpeg"
+          alt="europe tour photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Europe Tour</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card col" style="width: 18rem">
+        <img
+          class="card-img-top"
+          style="height: 350px; width: 80"
+          src="assets/southeast-asia-tour.jpg"
+          alt="southeast asia tour photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card col" style="width: 18rem">
+        <img
+          class="card-img-top"
+          style="height: 350px"
+          src="assets/south-america-tour.jpg"
+          alt="south america tour photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+        </div>
+      </div>
     </section>
 
     <script

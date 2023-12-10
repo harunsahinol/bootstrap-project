@@ -6,9 +6,23 @@ img {
   border-radius: 12px;
 }
 h1 {
+  font-size: 50px;
+  font-weight: 600;
   padding-bottom: 30px;
+}
+.header-text {
+  font-size: 21px;
+  padding-bottom: 30px;
+}
+.btn--big {
+  padding: 10px 20px;
+  font-size: 20px;
 }
 .world-img {
   width: 60%;
   height: 70%;
+  box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+}
+section {
+  margin-top: 70px;
 }
