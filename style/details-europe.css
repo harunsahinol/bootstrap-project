@@ -1,8 +1,17 @@
-.c-item{
+.c-item {
   height: 700px;
 }
-.c-img{
+.c-img {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
+}
+.gif-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.other-tours {
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  
 }
