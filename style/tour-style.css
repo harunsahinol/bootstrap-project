@@ -1,6 +1,13 @@
+.btn {
+  background-color: #9ec8b9;
+  border-color: black;
+}
+
 .btn:hover,
 .btn:active {
   background-color: #099268;
+  border-color: black;
+  color: white;
 }
 img {
   border-radius: 12px;
@@ -8,8 +15,8 @@ img {
 h1 {
   font-size: 50px;
   font-weight: 600;
-  padding-bottom: 30px;
 }
+
 .header-text {
   font-size: 21px;
   padding-bottom: 30px;
@@ -24,6 +31,5 @@ h1 {
   box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 section {
-  margin-top: 70px;
+  margin-top: 100px;
 }
-

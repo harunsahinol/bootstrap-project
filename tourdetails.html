@@ -27,25 +27,25 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/details-europe.css" />
 
-    <title>Tours</title>
+    <title>Tour-Details</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <span class="header-icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"
               height="60"
-              fill="#fff"
+              fill="#444"
               viewBox="0 0 256 256"
             >
               <path
                 d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm90.88,155.92-54.56-92.08A15.87,15.87,0,0,0,186.55,96h0a15.85,15.85,0,0,0-13.76,7.84L146.63,148l-44.84-76.1a16,16,0,0,0-27.58,0L1.11,195.94A8,8,0,0,0,8,208H248a8,8,0,0,0,6.88-12.08ZM88,80l23.57,40H64.43ZM22,192l33-56h66l18.74,31.8,0,0L154,192Zm150.57,0-16.66-28.28L186.55,112,234,192Z"
               ></path></svg></span
           ><a class="navbar-brand grid" href="index.html">
-            <h1 class="g-col-4">Travel</h1>
+            <h1 class="g-col-4 travel">Travel</h1>
           </a>
           <button
             class="navbar-toggler"
@@ -58,11 +58,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Navbar Links Starts here -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="tour.html">Tours</a>
@@ -75,161 +76,164 @@
         </div>
       </nav>
     </header>
-    <!-- carousel section  -->
-    <section>
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-              <p class="mt-5 fs-3 text-uppercase">Wanna see the Paris?</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                Discover the France
-              </h1>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=2896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-              <p class="mt-5 fs-3 text-uppercase">Wanna see the Rome?</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                Discover the Italy
-              </h1>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-              <p class="mt-5 fs-3 text-uppercase">Wanna see the Prague?</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
-                Discover the Chezch Republic
-              </h1>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <!-- tour details section  -->
-      <div class="container-fluid row my-5 ms-5 justify-content-center">
-        <div class="col-8 col-xs-col-auto">
-          <h2 class="fw-bolder fs-2">The Beauty Of West Europe</h2>
-          <p class="">
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            laborem consectectur, adipisci velit, sed quia non numquam eius modi
-            temporadew incisdunt ut labore et dolore magnam aliquam Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui offici
-            deserunt mollit anim id est enim ad minim veniam, quis nostrud
-            exercitation ullam co labr is nisi ut aliquip ex Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo con. Duis aute irure dolor in reprehenderit in voluptate
-            velitesse cillum dolore eu fugiat nulla pariatu sint occaecat
-            cupidatat non proident, sunt in culpa
-          </p>
-          <img
-            src="https://media0.giphy.com/media/Cb8GBESHFYoEw/giphy.gif?cid=ecf05e471xope042a0nwpx1dlgc1o4fcnp5dcdink497fczp&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-            alt="gif photo for eiffel tower"
-            class="gif-img"
-          />
-          <h2 class="fw-bolder fs-2 mt-5 mb-2">About West Europe</h2>
-          <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            laborem consectectur, adipisci velit, sed quia non numquam eius modi
-            temporadew incisdunt ut labore et dolore magnam aliquam Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui offici
-            deserunt mollit anim id est enim ad minim veniam, quis nostrud
-            exercitation ullam co labr is nisi ut aliquip ex Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo con. Duis aute irure dolor in reprehenderit in voluptate
-            velitesse cillum dolore eu fugiat nulla pariatu sint occaecat
-            cupidatat non proident, sunt in culpa
-          </p>
-        </div>
-        <div class="col ms-5 ms-lx-auto bg-text-dark other-tours">
-          <h2 class="text-dark">See other tours</h2>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">South America Tour</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    <main>
+      <!-- carousel section  -->
+      <section>
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <p class="mt-5 fs-3 text-uppercase">Wanna see the Paris?</p>
+                <h1 class="display-1 fw-bolder text-capitalize">
+                  Discover the France
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=2896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <p class="mt-5 fs-3 text-uppercase">Wanna see the Rome?</p>
+                <h1 class="display-1 fw-bolder text-capitalize">
+                  Discover the Italy
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100 c-img"
+                alt="..."
+              />
+              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <p class="mt-5 fs-3 text-uppercase">Wanna see the Prague?</p>
+                <h1 class="display-1 fw-bolder text-capitalize">
+                  Discover the Chezch Republic
+                </h1>
+              </div>
             </div>
           </div>
-          <div class="card mt-5" style="width: 18rem">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- tour details section  -->
+        <div class="container-fluid row my-5 ms-5 justify-content-center">
+          <div class="col-8 col-xs-col-auto">
+            <h2 class="fw-bolder fs-2">The Beauty Of West Europe</h2>
+            <p class="">
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              laborem consectectur, adipisci velit, sed quia non numquam eius
+              modi temporadew incisdunt ut labore et dolore magnam aliquam
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              offici deserunt mollit anim id est enim ad minim veniam, quis
+              nostrud exercitation ullam co labr is nisi ut aliquip ex Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit
+              in voluptate velitesse cillum dolore eu fugiat nulla pariatu sint
+              occaecat cupidatat non proident, sunt in culpa
+            </p>
             <img
-              src="https://images.unsplash.com/photo-1552993873-0dd1110e025f?q=80&w=2765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="card-img-top"
-              alt="..."
+              src="https://media0.giphy.com/media/Cb8GBESHFYoEw/giphy.gif?cid=ecf05e471xope042a0nwpx1dlgc1o4fcnp5dcdink497fczp&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+              alt="gif photo for eiffel tower"
+              class="gif-img"
             />
-            <div class="card-body">
-              <h5 class="card-title">Asia Tour</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h2 class="fw-bolder fs-2 mt-5 mb-2">About West Europe</h2>
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              laborem consectectur, adipisci velit, sed quia non numquam eius
+              modi temporadew incisdunt ut labore et dolore magnam aliquam
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              offici deserunt mollit anim id est enim ad minim veniam, quis
+              nostrud exercitation ullam co labr is nisi ut aliquip ex Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit
+              in voluptate velitesse cillum dolore eu fugiat nulla pariatu sint
+              occaecat cupidatat non proident, sunt in culpa
+            </p>
+          </div>
+          <div class="col ms-5 ms-lx-auto bg-text-dark other-tours">
+            <h2 class="text-dark">See other tours</h2>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">South America Tour</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card mt-5" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1552993873-0dd1110e025f?q=80&w=2765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Asia Tour</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
