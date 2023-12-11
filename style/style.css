@@ -4,14 +4,40 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Brygada 1918', serif;
-  color: #444;
+html {
+  font-size: 62.5%;
 }
 
+main {
+  margin-top: 90px;
+}
+
+body {
+  font-family: 'Brygada 1918', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.section-margin {
+  margin-top: 60px;
+}
+
+/*navigation*/
+.navbar {
+  background-color: #f5faf8 !important;
+}
 .header-icon {
   margin-left: 10px;
   margin-right: 10px;
+}
+.travel {
+  font-size: 32px;
+  margin-right: 26px;
 }
 .container-fluid {
   margin-top: 10px;
@@ -20,7 +46,113 @@ body {
 .nav-link {
   font-size: 24px;
 }
-
 .nav-item {
   margin-right: 12px;
+}
+
+/*main header*/
+.section-hero {
+  padding: 48px 0 96px 0;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.09);
+  background-color: #f5faf8;
+}
+
+.heading-primary {
+  font-size: 48px;
+  padding-bottom: 24px;
+}
+
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.hero-img {
+  border-radius: 12px;
+
+  aspect-ratio: 2/3;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 9px;
+
+  transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #9ec8b9;
+  color: #333;
+  border-color: black;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #099268;
+  border-color: black;
+  color: white;
+}
+
+/*Why are we the best*/
+.icon {
+  width: 20%;
+  color: #5f786f;
+}
+
+.benefits-title {
+  font-size: 26px;
+  padding-right: 48px;
+}
+
+.benefits-text {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+/*Destinations*/
+.step-number {
+  font-size: 84px;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+.destination-heading {
+  font-size: 28px;
+  padding-bottom: 32px;
+}
+.destination-text {
+  font-size: 18px;
+  line-height: 1.8;
+  padding-bottom: 32px;
+}
+
+.destination-img {
+  width: 90%;
+  height: auto;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+.destination-img-2 {
+  width: 90%;
+  height: auto;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  aspect-ratio: 3/2;
 }

@@ -1,6 +1,36 @@
+<<<<<<< HEAD
 section {
   background-color: rgb(254, 254, 254);
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  margin-top: 90px;
+}
+
+body {
+  font-family: 'Brygada 1918', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+>>>>>>> 795e3435460aa25e6b240b92b306eadeb8c1e74d
 .c-item {
   height: 700px;
 }
@@ -14,10 +44,15 @@ section {
   overflow: hidden;
 }
 .other-tours {
+<<<<<<< HEAD
   padding-right: -40px;
   padding-left: -10px;
   padding-top: 20px;
   box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+=======
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+>>>>>>> 795e3435460aa25e6b240b92b306eadeb8c1e74d
 }
