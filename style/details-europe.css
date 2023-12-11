@@ -1,3 +1,6 @@
+section {
+  background-color: rgb(254, 254, 254);
+}
 .c-item {
   height: 700px;
 }
@@ -11,7 +14,10 @@
   overflow: hidden;
 }
 .other-tours {
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2);
-  
+  padding-right: -40px;
+  padding-left: -10px;
+  padding-top: 20px;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
