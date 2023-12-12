@@ -1,41 +1,9 @@
-<<<<<<< HEAD
-section {
-  background-color: rgb(254, 254, 254);
-}
-=======
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-main {
-  margin-top: 90px;
-}
-
-body {
-  font-family: 'Brygada 1918', sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #333;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-/*//////////////////////////////////////////////////////////////////////////////////////*/
-
->>>>>>> 795e3435460aa25e6b240b92b306eadeb8c1e74d
 .c-item {
   height: 700px;
 }
 .c-img {
-  height: 100%;
+  height: 503px;
+  width: 100%;
   object-fit: cover;
   filter: brightness(0.6);
 }
@@ -43,16 +11,39 @@ h2 {
   border-radius: 20px;
   overflow: hidden;
 }
-.other-tours {
-<<<<<<< HEAD
-  padding-right: -40px;
-  padding-left: -10px;
-  padding-top: 20px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-=======
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2);
->>>>>>> 795e3435460aa25e6b240b92b306eadeb8c1e74d
+.card-img {
+  object-fit: fill;
+}
+.widget-card {
+
+  border-radius: 12px;
+  background-color: #9ec8b9;
+  margin-right: -40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.detail-section {
+  padding-top: 100px;
+}
+h1{
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#first-card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#second-card {
+  margin-bottom: 30px;
+}
+.card-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 30px;
 }
