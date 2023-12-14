@@ -46,8 +46,13 @@ h2 {
 .nav-link {
   font-size: 24px;
 }
+
 .nav-item {
   margin-right: 12px;
+}
+.dropdown-item {
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
 }
 
 /*main header*/
@@ -157,22 +162,21 @@ h2 {
 }
 
 /* Make the pictures full screen when clicked */
-#myImg {
+.myImages {
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
-
-#myImg:hover {
+.myImages:hover {
   opacity: 0.8;
 }
-
 /* The Modal background */
 .modal {
   display: none;
   position: fixed;
   z-index: 10000;
   padding-top: 100px;
+  padding-bottom: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -191,10 +195,9 @@ h2 {
 }
 
 /* Animation - Zoom in the Modal when opening */
-.modal-content,
-#caption {
+.modal-content {
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 @keyframes zoom {
