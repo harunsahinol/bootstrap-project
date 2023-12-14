@@ -7,6 +7,7 @@
   object-fit: cover;
   filter: brightness(0.6);
 }
+
 .gif-img {
   border-radius: 20px;
   overflow: hidden;
@@ -15,8 +16,7 @@
   object-fit: fill;
 }
 .widget-card {
-  border-radius: 12px;
-  background-color: #9ec8b9;
+  border-radius: 12px;  
   margin-right: -40px;
   margin-left: 30px;
   margin-bottom: 30px;
@@ -33,9 +33,6 @@ h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-#second-card {
-  margin-bottom: 30px;
-}
 .card-text {
   font-size: 16px;
   font-weight: 600;
@@ -45,4 +42,10 @@ h1 {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 30px;
+}
+.last-para{
+ padding-bottom: 30px; 
+}
+.last-photo{
+  width: 400px;
 }
