@@ -9,21 +9,23 @@ const navLinks = document.querySelectorAll('.nav-link').forEach((link) => {
 //Heading text
 const textEl = document.getElementById('text');
 const text = 'Travel anywhere you want to see!!';
-let idx = 1;
+let idx = 0;
 let speed = 120;
-writeText();
 function writeText() {
-  textEl.innerText = text.slice(0, idx);
-  idx++;
-  if (idx > text.length) {
-    idx = 1;
+  if (textEl) {
+    textEl.innerText = text.slice(0, idx);
+    idx++;
+    if (idx > text.length) {
+      idx = 0;
+    }
+    setTimeout(writeText, speed);
   }
-  setTimeout(writeText, speed);
 }
+writeText();
 
 //Photo modal
 const modal = document.getElementById('myModal');
-const images = document.getElementsByClassName('myImages');
+const images = document.querySelectorAll('.myImages');
 const modalImg = document.getElementById('img01');
 for (let i = 0; i < images.length; i++) {
   let img = images[i];
