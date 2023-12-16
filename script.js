@@ -1,11 +1,25 @@
 //navbar
 const activePage = window.location.pathname;
-
 const navLinks = document.querySelectorAll('.nav-link').forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
     link.classList.add('active');
   }
 });
+
+//Heading text
+const textEl = document.getElementById('text');
+const text = 'Travel anywhere you want to see!!';
+let idx = 1;
+let speed = 120;
+writeText();
+function writeText() {
+  textEl.innerText = text.slice(0, idx);
+  idx++;
+  if (idx > text.length) {
+    idx = 1;
+  }
+  setTimeout(writeText, speed);
+}
 
 //Photo modal
 const modal = document.getElementById('myModal');
@@ -18,9 +32,7 @@ for (let i = 0; i < images.length; i++) {
     modalImg.src = this.src;
   };
 }
-// Get the <span> element that closes the modal
 const button = document.getElementsByClassName('close')[0];
-// When the user clicks on x, close the modal
 button.onclick = function () {
   modal.style.display = 'none';
 };

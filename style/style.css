@@ -71,12 +71,9 @@ h2 {
 }
 
 .hero {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 96px;
+  text-align: center;
   align-items: center;
 }
 
@@ -88,7 +85,6 @@ h2 {
 
 .hero-img {
   border-radius: 12px;
-
   aspect-ratio: 2/3;
 }
 
@@ -234,23 +230,4 @@ h2 {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
-/* Define your CSS styles here */
-@media (max-width: 767px) {
-  /* Adjust the maximum width as needed */
-  .grid {
-    --bs-columns: 1; /* Set the columns to 1 for smaller screens */
-  }
-
-  .g-col-4 {
-    display: block;
-  }
 }
