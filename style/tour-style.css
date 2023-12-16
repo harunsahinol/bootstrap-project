@@ -1,5 +1,6 @@
 .introduction-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/world-photo.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/world-photo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +17,7 @@
   background-color: #f5faf8;
   max-width: 600px;
   margin: 0 auto;
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 .center button {
   position: fixed;
@@ -71,12 +72,12 @@
   width: 60%;
   height: 70%;
   border-radius: 50%; /* Make the edges more circular */
-  box-shadow: 25px 25px 50px 0 rgb(10, 10, 10) inset, -25px -25px 50px 0 rgb(108, 77, 77) inset;
+  box-shadow: 25px 25px 50px 0 rgb(10, 10, 10) inset,
+    -25px -25px 50px 0 rgb(108, 77, 77) inset;
 }
-.card{
+.card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .card .btn {
   margin-top: 10px;
@@ -91,7 +92,6 @@
   color: #fff; /* Text color on hover/active */
 }
 
-
 .card:hover {
   transform: scale(1.05); /* Increase size on hover */
   transition: transform 0.3s; /* Add a smooth transition effect */
@@ -103,4 +103,17 @@
 
 .card:hover .card-body {
   opacity: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.cardtext {
+  font-size: 16px;
 }
