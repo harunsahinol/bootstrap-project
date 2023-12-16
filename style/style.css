@@ -13,7 +13,7 @@ main {
 }
 
 body {
-  font-family: 'Brygada 1918', sans-serif;
+  font-family: "Brygada 1918", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
@@ -53,6 +53,9 @@ h2 {
 .dropdown-item {
   font-size: 18px;
   padding: 5px 10px 5px 10px;
+}
+.active {
+  text-decoration: underline;
 }
 
 /*main header*/
