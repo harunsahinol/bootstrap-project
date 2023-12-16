@@ -8,14 +8,24 @@
   filter: brightness(0.6);
 }
 a {
-  text-decoration: none; /* Altını çizgiyi kaldır */
-  color: black; /* Rengi siyah yap */
+  text-decoration: none;
+  color: black;
 }
-p{
+p {
   line-height: 1.5;
 }
+.head-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  max-height: 100%;
+  color: white;
+  font-size: 7rem;
+}
 .gif-img {
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
 }
 .card-img {
@@ -25,7 +35,6 @@ p{
   border-radius: 12px;
   margin-right: -40px;
   margin-left: 30px;
-  margin-bottom: 30px;
 }
 .detail-section {
   padding-top: 100px;
@@ -50,14 +59,12 @@ h2 {
   margin-bottom: 30px;
 }
 .last-para {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .last-photo {
   width: 400px;
   border-radius: 12px;
-  
 }
-.last-part{
-  padding-top: 40px;
+.last-part {
   padding-bottom: 100px;
 }
