@@ -17,28 +17,29 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
 
     <title>Travel</title>
+    <link rel="icon" type="image/icon" href="assets/logo.jpg" />
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <span class="header-icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"
               height="60"
-              fill="#fff"
+              fill="#444"
               viewBox="0 0 256 256"
             >
               <path
                 d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm90.88,155.92-54.56-92.08A15.87,15.87,0,0,0,186.55,96h0a15.85,15.85,0,0,0-13.76,7.84L146.63,148l-44.84-76.1a16,16,0,0,0-27.58,0L1.11,195.94A8,8,0,0,0,8,208H248a8,8,0,0,0,6.88-12.08ZM88,80l23.57,40H64.43ZM22,192l33-56h66l18.74,31.8,0,0L154,192Zm150.57,0-16.66-28.28L186.55,112,234,192Z"
               ></path></svg></span
           ><a class="navbar-brand grid" href="index.html">
-            <h1 class="g-col-4">Travel</h1>
+            <h1 class="g-col-4 travel">Travel</h1>
           </a>
           <button
             class="navbar-toggler"
@@ -52,17 +53,45 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tour.html">Tours</a>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="tour.html"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tours
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="europe-tour.html"
+                      >Europe Tours</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="asia-tour.html"
+                      >Asia Tours</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="america-tour.html"
+                      >America Tours</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="tour.html">About Tours</a>
               </li>
             </ul>
           </div>
@@ -71,7 +100,335 @@
     </header>
 
     <main>
-      <h1>Home</h1>
+      <section class="section-hero">
+        <div class="hero container text-center">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Travel anywhere you want to see!</h1>
+            <p class="hero-description">
+              Use our travel routes to decide where you want to go. Discover the
+              world with our help.
+            </p>
+            <a href="tour.html" class="btn btn--full margin-right-sm"
+              >Start Discovering</a
+            >
+          </div>
+          <div class="hero-img-box" style="margin-left: 100px">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="width: 60%"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="assets/homepage/hero.jpg"
+                    class="d-block w-100 hero-img"
+                    alt="world"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/homepage/hero1.jpg"
+                    class="d-block w-100 hero-img"
+                    alt="world"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/homepage/hero2.jpg"
+                    class="d-block w-100 hero-img"
+                    alt="world"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/homepage/hero3.jpg"
+                    class="d-block w-100 hero-img"
+                    alt="world"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-margin">
+        <div class="container text-center">
+          <h2 class="pb-5">Why are we the best?</h2>
+          <div class="row">
+            <div class="col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
+                />
+              </svg>
+              <hr />
+              <p class="benefits-title">Affordable Price</p>
+              <p class="benefits-text">
+                We offer the most convenient and economical pricing opportunity.
+              </p>
+            </div>
+            <div class="col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                />
+              </svg>
+              <hr />
+              <p class="benefits-title">Good caring guidance</p>
+              <p class="benefits-text">
+                Feel free to contact us for anything you would like to learn.
+              </p>
+            </div>
+            <div class="col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"
+                />
+              </svg>
+              <hr />
+              <p class="benefits-title">Flexible tour change</p>
+              <p class="benefits-text">
+                If you are unable to participate in the tour you have purchased,
+                we offer the opportunity to replace it with another tour of your
+                choice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-margin">
+        <h2 class="container some-destinations-title">
+          Some popular destinations
+        </h2>
+      </section>
+
+      <section class="section-margin">
+        <div class="container">
+          <div class="row destination">
+            <div class="col-sm-4">
+              <div class="photo">
+                <img
+                  src="assets/homepage/london.jpg"
+                  class="destination-img myImages"
+                  alt="London"
+                />
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h3 class="destination-heading">England</h3>
+                <p class="destination-text">
+                  England is part of the United Kingdom, which also includes
+                  Scotland, Wales, and Northern Ireland. Most visitors head
+                  straight to England’s capital, London, which is home to iconic
+                  landmarks such as Buckingham Palace, Big Ben, and Westminster
+                  Abbey. But, there are fantastic sites all over England,
+                  especially for Shakespeare and Harry Potter fans! Head to
+                  Stonehenge, Oxford, the University of Cambridge, and the hot
+                  springs of Bath. With urban cities and towns that look like
+                  they’re from storybooks, England has an incredibly interesting
+                  history, age-old traditions, and spectacular gardens.
+                </p>
+                <div class="row">
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/london5.jpg"
+                      class="destination-img-2 myImages"
+                      alt="London"
+                    />
+                  </div>
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/london3.jpg"
+                      class="destination-img-2 myImages"
+                      alt="London"
+                    />
+                  </div>
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/london4.jpg"
+                      class="destination-img-2 myImages"
+                      alt="London"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-margin destination">
+        <div class="container grid">
+          <div class="row">
+            <p class="step-number">02</p>
+            <h3 class="destination-heading">Germany</h3>
+            <div class="grid" style="--bs-columns: 12">
+              <div class="g-col-6 destination-text">
+                Germany is often seen as the heart of Europe due to its deep
+                history. It’s most well known for its bratwursts and beer, but
+                the country is so much more than that. Berlin has Museum Island;
+                in Bavaria, you can find the most amazing castles; you can ski
+                in the Alps during the winter months, and you can explore
+                skyscrapers in Frankfurt. Plus it’s one of the safest countries
+                in Europe and a large part of the population speaks English,
+                making your travels easy and stress-free! Whether you’re looking
+                to eat and drink your way around the country or you want to
+                immerse yourself amongst churches, castles, or museums galore,
+                Germany has something for every traveler out there.
+              </div>
+              <div class="g-col-4">
+                <div class="row grid">
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/germany.jpg"
+                      class="destination-img-2 myImages img-fluid"
+                      alt="Germany"
+                    />
+                  </div>
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/germany2.jpg"
+                      class="destination-img-2 myImages img-fluid"
+                      alt="Germany"
+                    />
+                  </div>
+                  <div class="col-sm">
+                    <img
+                      src="assets/homepage/germany3.jpg"
+                      class="destination-img-2 myImages img-fluid"
+                      alt="Germany"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-margin">
+        <div class="container">
+          <div class="row equal-height-row destination">
+            <div class="col-md-8 equal-height-col">
+              <p class="step-number">03</p>
+              <h3 class="destination-heading">Thailand</h3>
+              <p class="destination-text">
+                Thailand, or The Kingdom of Thailand as is its official name, is
+                a big country in the middle of southeast Asia. The country is
+                blessed with a tropical and warm climate and lots of islands
+                with stunning beaches. Tourism is the country`s biggest and most
+                important sector of the economy. Since they have had tourism for
+                so many decades, it is a fairly easy country to travel in.
+                Thailand is a parliamentary democracy, with a monarchy. The King
+                is highly regarded and respected, and have a huge influence.
+                Despite pressure from several European countries, Thailand is
+                the only South-East Asian country that has never been colonized.
+                Thailand is called “the land of smiles“, and really lives up to
+                that expression as the people are extremely friendly and
+                welcoming.
+              </p>
+              <div class="row">
+                <div class="col-sm">
+                  <img
+                    src="assets/homepage/tayland2.jpg"
+                    class="destination-img-2 myImages"
+                    alt="Thailand"
+                  />
+                </div>
+                <div class="col-sm">
+                  <img
+                    src="assets/homepage/tayland3.jpg"
+                    class="destination-img-2 myImages"
+                    alt="Thailand"
+                  />
+                </div>
+                <div class="col-sm">
+                  <img
+                    src="assets/homepage/tayland4.jpg"
+                    class="destination-img-2 myImages"
+                    alt="Thailand"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 equal-height-col">
+              <div class="photo">
+                <img
+                  src="assets/homepage/tayland.jpg"
+                  class="destination-img myImages"
+                  alt="Thailand"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- For images: They become modal when clicked -->
+      <section>
+        <div id="myModal" class="modal">
+          <button class="close">&times;</button>
+          <img class="modal-content" id="img01" />
+        </div>
+        <div class="overlay"></div>
+      </section>
     </main>
 
     <script

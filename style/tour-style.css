@@ -1,0 +1,87 @@
+.introduction-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/world-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.header-text-box {
+  padding: 48px 0 96px 0;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.09);
+  background-color: #f5faf8;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+
+.welcome-message {
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.header-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Circular edges for world photo */
+.world-img {
+  margin-right: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  height: 70%;
+  border-radius: 50%; /* Make the edges more circular */
+  box-shadow: 25px 25px 50px 0 rgb(10, 10, 10) inset,
+    -25px -25px 50px 0 rgb(108, 77, 77) inset;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .btn {
+  margin-top: 10px;
+  color: #009688; /* Green button text color */
+  background-color: #fff; /* White button background color */
+  border: 1px solid #009688; /* Green button border color */
+}
+
+.card .btn:hover,
+.card .btn:active {
+  background-color: #009688; /* Green button background color on hover/active */
+  color: #fff; /* Text color on hover/active */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+.card .card-body {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.cardtext {
+  font-size: 16px;
+}

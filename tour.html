@@ -17,27 +17,30 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/tour-style.css" />
 
     <title>Tours</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.jpg" />
   </head>
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <span class="header-icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"
               height="60"
-              fill="#fff"
+              fill="#444"
               viewBox="0 0 256 256"
             >
               <path
                 d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm90.88,155.92-54.56-92.08A15.87,15.87,0,0,0,186.55,96h0a15.85,15.85,0,0,0-13.76,7.84L146.63,148l-44.84-76.1a16,16,0,0,0-27.58,0L1.11,195.94A8,8,0,0,0,8,208H248a8,8,0,0,0,6.88-12.08ZM88,80l23.57,40H64.43ZM22,192l33-56h66l18.74,31.8,0,0L154,192Zm150.57,0-16.66-28.28L186.55,112,234,192Z"
               ></path></svg></span
           ><a class="navbar-brand grid" href="index.html">
-            <h1 class="g-col-4">Travel</h1>
+            <h1 class="g-col-4 travel">Travel</h1>
           </a>
           <button
             class="navbar-toggler"
@@ -51,24 +54,137 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tour.html">Tours</a>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="index.html"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tours
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="europe-tour.html"
+                      >Europe Tours</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="asia-tour.html"
+                      >Asia Tours</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="america-tour.html"
+                      >America Tours</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="tour.html">About Tours</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
+    <!-- Introducing part -->
     <main>
-      <h1>Tours</h1>
+      <div class="container container-fluid">
+        <header class="row">
+          <div class="text-start col header-text-box">
+            <h1 class="fw-bold">
+              Discover Your Next Adventure
+            </h1>
+            <p class="header-text">
+              Indulge your wanderlust and set out on an extraordinary journey with our meticulously designed tour packages.
+              Our mission is to ignite the spirit of exploration within you, 
+              unlocking the door to immersive cultural experiences,
+              awe-inspiring landscapes, and unforgettable moments.
+            </p>
+          </div>
+          <img
+            class="world-img col img-fluid"
+            src="assets/world-photo.jpg"
+            alt="World Photo"
+          />
+        </header>
+      </div>
+      <hr class="my-5" style="border-width: 25px; border-color: #f5faf8" />
+
+      <!-- Card Section -->
+      <h2 class="text-center mb-4">Tours</h2>
+      <section id="Tours" class="container-fluid row">
+        <div class="container">
+          <div class="row gy-3 d-flex flex-row">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="A Street in Europe"
+                  class="card-img-top img-fluid"
+                />
+                <h2 class="card-title">Europe Tours</h2>
+                <div class="card-body">
+                  <p class="cardtext">
+                    Castles, Canals, and Cobblestone Streets: Your European
+                    Fairytale Awaits
+                  </p>
+                  <a href="europe-tour.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.pexels.com/photos/96932/pexels-photo-96932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="A Temple in Asia"
+                  class="card-img-top img-fluid"
+                />
+                <h2 class="card-title">Asia Tour</h2>
+                <div class="card-body">
+                  <p class="cardtext">
+                    Enchanting Asia: Your Gateway to Timeless Beauty and
+                    Unforgettable Memories
+                  </p>
+                  <a href="asia-tour.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="A Beautiful View of Sky"
+                  class="card-img-top img-fluid"
+                />
+                <h2 class="card-title">South America Tours</h2>
+                <div class="card-body">
+                  <p class="cardtext">
+                    Inca Treasures to Amazonian Wonders: Your Passport to South
+                    America's Marvels"
+                  </p>
+                  <a href="america-tour.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
