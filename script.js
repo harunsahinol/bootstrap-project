@@ -32,13 +32,15 @@ for (let i = 0; i < images.length; i++) {
     modalImg.src = this.src;
   };
 }
-const button = document.getElementsByClassName('close')[0];
-button.onclick = function () {
-  modal.style.display = 'none';
-};
 
-window.onclick = function (event) {
-  if (!event.target.matches('.myImages')) {
+$(document).ready(function () {
+  $(document).on('click', function (event) {
+    if (!$(event.target).closest('.modal-content, .myImages').length) {
+      $('#myModal').hide();
+    }
+  });
+
+  $('.close').on('click', function () {
     $('#myModal').hide();
-  }
-};
+  });
+});
