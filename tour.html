@@ -210,5 +210,25 @@
     ></script>
 
     <script defer type="text/javascript" src="script.js"></script>
+    <script>
+      // Add a script to handle the slide-up effect for card text
+      document.addEventListener('DOMContentLoaded', function () {
+        const cards = document.querySelectorAll('.card');
+    
+        cards.forEach((card) => {
+          const cardText = card.querySelector('.card-body');
+    
+          card.addEventListener('mouseenter', function () {
+            cardText.style.transform = 'translateY(0)';
+            cardText.style.transition = 'transform 0.5s ease';
+          });
+    
+          card.addEventListener('mouseleave', function () {
+            cardText.style.transform = 'translateY(100%)';
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>
