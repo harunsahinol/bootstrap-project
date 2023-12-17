@@ -10,13 +10,16 @@ const navLinks = document.querySelectorAll('.nav-link').forEach((link) => {
 const textEl = document.getElementById('text');
 const text = 'Travel anywhere you want to see!!';
 let idx = 0;
-let speed = 120;
+let speed = 110;
+let alreadyWritten = false;
+
 function writeText() {
-  if (textEl) {
+  if (textEl && !alreadyWritten) {
     textEl.innerText = text.slice(0, idx);
     idx++;
     if (idx > text.length) {
-      idx = 0;
+      alreadyWritten = true;
+      return;
     }
     setTimeout(writeText, speed);
   }
